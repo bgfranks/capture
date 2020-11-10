@@ -1,7 +1,9 @@
+import About from "./pages/About"
+
 function App() {
   return (
     <div>
-      <h1>text</h1>
+      <About />
     </div>
   )
 }
