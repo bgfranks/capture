@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 const Navbar = styled.div`
@@ -35,19 +36,19 @@ const Nav = () => {
   return (
     <Navbar>
       <h1>
-        <a className="logo" href="#">
+        <Link className="logo" to="/">
           Capture
-        </a>
+        </Link>
       </h1>
       <ul>
         <li>
-          <a href="#">About Us</a>
+          <Link to="/">About Us</Link>
         </li>
         <li>
-          <a href="#">Our Work</a>
+          <Link to="/our-work">Our Work</Link>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </Navbar>
