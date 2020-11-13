@@ -25,7 +25,7 @@ const Cards = styled.div`
 `
 
 const Card = styled.div`
-  flex-basis: 15rem;
+  flex-basis: 20rem;
 
   .icon {
     display: flex;
