@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Nav from "./components/Nav"
 import Contact from "./pages/Contact"
 import OurWork from "./pages/OurWork"
+import MovieDetail from "./pages/MovieDetail"
 
 function App() {
   return (
@@ -15,8 +16,11 @@ function App() {
         <Route path="/" exact>
           <About />
         </Route>
-        <Route path="/our-work">
+        <Route path="/our-work" exact>
           <OurWork />
+        </Route>
+        <Route to="/our-work/:id">
+          <MovieDetail />
         </Route>
         <Route path="/contact">
           <Contact />
