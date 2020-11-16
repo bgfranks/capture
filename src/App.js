@@ -23,7 +23,7 @@ function App() {
           <Route path="/our-work" exact>
             <OurWork />
           </Route>
-          <Route to="/our-work/:id">
+          <Route path="/our-work/:id">
             <MovieDetail />
           </Route>
           <Route path="/contact">
