@@ -4,7 +4,9 @@ import styled from "styled-components"
 import { pageAnimation } from "../animation"
 
 const ContactPage = styled(motion.div)`
-  color: #fff;
+  h1 {
+    color: white;
+  }
 `
 
 const Contact = () => {
@@ -15,7 +17,7 @@ const Contact = () => {
       animate="show"
       exit="exit"
     >
-      <h1>hi there</h1>
+      <h1>Hi there, render please</h1>
     </ContactPage>
   )
 }
