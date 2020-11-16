@@ -1,8 +1,22 @@
+import { motion } from "framer-motion"
+import styled from "styled-components"
+
+import { pageAnimation } from "../animation"
+
+const ContactPage = styled(motion.div)`
+  color: #fff;
+`
+
 const Contact = () => {
   return (
-    <div>
-      <h1>hi</h1>
-    </div>
+    <ContactPage
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
+      <h1>hi there</h1>
+    </ContactPage>
   )
 }
 
