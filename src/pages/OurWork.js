@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 import athlete from "../img/athlete-small.png"
 import theracer from "../img/theracer-small.png"
 import goodtimes from "../img/goodtimes-small.png"
 
-const Work = styled.div`
+import { pageAnimation } from "../animation"
+
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -32,7 +35,13 @@ const Movie = styled.div`
 
 const OurWork = () => {
   return (
-    <Work>
+    <Work
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+      style={{ background: "#fff" }}
+    >
       <Movie>
         <h2>The Athelete</h2>
         <div className="line" />

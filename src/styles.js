@@ -15,6 +15,7 @@ export const Description = styled.div`
 
   h2 {
     font-weight: lighter;
+    font-size: 3rem;
   }
 `
 

@@ -16,6 +16,7 @@ const Services = styled(About)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+    text-align: center;
   }
 `
 
@@ -25,11 +26,13 @@ const Cards = styled.div`
 `
 
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 12rem;
+  margin: 0px 12px 20px;
 
   .icon {
     display: flex;
     align-items: center;
+    text-align: center;
 
     h3 {
       margin-left: 1rem;
