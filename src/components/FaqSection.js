@@ -1,5 +1,7 @@
 import styled from "styled-components"
+
 import { About } from "../styles"
+import Toggle from "./Toggle"
 
 const Faq = styled(About)`
   display: block;
@@ -43,13 +45,15 @@ const FaqSection = () => {
         </h2>
         <div className="question">
           <h4>How do I Start?</h4>
-          <div className="answer">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem omnis nulla veritatis suscipit doloribus obcaecati.
-            </p>
-          </div>
+          <Toggle>
+            <div className="answer">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem omnis nulla veritatis suscipit doloribus obcaecati.
+              </p>
+            </div>
+          </Toggle>
           <div className="faq-line" />
         </div>
         <div className="question">
