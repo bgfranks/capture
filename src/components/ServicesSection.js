@@ -7,6 +7,8 @@ import diaphragm from "../img/diaphragm.svg"
 import money from "../img/money.svg"
 import teamwork from "../img/teamwork.svg"
 import home2 from "../img/home2.png"
+import { ScrollReveal } from "../animation"
+import { useScroll } from "./useScroll"
 
 const Services = styled(About)`
   h2 {
@@ -27,7 +29,11 @@ const Cards = styled.div`
 
 const Card = styled.div`
   flex-basis: 12rem;
-  margin: 0px 12px 20px;
+  margin: 0px 50px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .icon {
     display: flex;
@@ -44,8 +50,15 @@ const Card = styled.div`
 `
 
 const ServicesSection = () => {
+  const [element, controls] = useScroll()
+
   return (
-    <Services>
+    <Services
+      variants={ScrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Description>
         <h2>
           High <span>quality</span> services
