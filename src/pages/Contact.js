@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 
 import { pageAnimation, titleAnimation } from "../animation"
+import ScrollTop from "../components/ScrollTop"
 
 const ContactPage = styled(motion.div)`
   padding: 5rem 10rem;
@@ -68,6 +69,7 @@ const Contact = () => {
           </Social>
         </Hide>
       </div>
+      <ScrollTop />
     </ContactPage>
   )
 }

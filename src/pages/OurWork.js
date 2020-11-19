@@ -6,6 +6,7 @@ import athlete from "../img/athlete-small.png"
 import theracer from "../img/theracer-small.png"
 import goodtimes from "../img/goodtimes-small.png"
 import { useScroll } from "../components/useScroll"
+import ScrollTop from "../components/ScrollTop"
 
 import {
   pageAnimation,
@@ -118,6 +119,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="Good Times" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   )
 }
