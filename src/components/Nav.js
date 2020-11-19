@@ -7,8 +7,11 @@ const Navbar = styled.div`
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  background: #1c1c1c;
   padding: 1rem 10rem;
-  background: #28282819;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 
   a {
     color: white;

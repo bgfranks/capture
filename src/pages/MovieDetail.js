@@ -6,6 +6,7 @@ import styled from "styled-components"
 import { MovieState } from "../movieState"
 
 import { pageAnimation } from "../animation"
+import ScrollTop from "../components/ScrollTop"
 
 const Details = styled(motion.div)`
   color: white;
@@ -84,6 +85,7 @@ const MovieDetail = () => {
           <ImageDisplay>
             <img src={movie.secondaryImg} alt={movie.title} />
           </ImageDisplay>
+          <ScrollTop />
         </Details>
       )}
     </>
