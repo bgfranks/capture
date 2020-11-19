@@ -9,6 +9,10 @@ import { useScroll } from "./useScroll"
 const Faq = styled(About)`
   display: block;
 
+  @media (max-width: 1100px) {
+    text-align: left;
+  }
+
   span {
     display: inline;
   }
@@ -16,6 +20,11 @@ const Faq = styled(About)`
   h2 {
     padding-bottom: 2rem;
     font-weight: lighter;
+
+    @media (max-width: 1100px) {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
   }
 
   .faq-line {
