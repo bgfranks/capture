@@ -33,6 +33,21 @@ const Navbar = styled.div`
     padding-left: 10rem;
     position: relative;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 1rem;
+
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100px;
+
+      li {
+        padding: 0rem 5rem;
+      }
+    }
+  }
 `
 
 const Nav = () => {
@@ -45,13 +60,13 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">About Us</Link>
+          <Link to="/">About</Link>
         </li>
         <li>
-          <Link to="/our-work">Our Work</Link>
+          <Link to="/our-work">Work</Link>
         </li>
         <li>
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </Navbar>

@@ -9,6 +9,15 @@ export const About = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   overflow: hidden;
+
+  @media (max-width: 1100px) {
+    text-align: center;
+    min-height: 60vh;
+
+    p {
+      padding: 40px 50px;
+    }
+  }
 `
 
 export const Description = styled.div`
@@ -31,6 +40,10 @@ export const Image = styled.div`
     width: 100%;
     height: 80vh;
     object-fit: cover;
+  }
+
+  @media (max-width: 1100px) {
+    display: none;
   }
 `
 

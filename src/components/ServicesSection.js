@@ -20,20 +20,32 @@ const Services = styled(About)`
     padding: 2rem 0rem 4rem 0rem;
     text-align: center;
   }
+
+  @media (max-width: 1100px) {
+    text-align: center;
+  }
 `
 
 const Cards = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: 1100px) {
+    justify-content: center;
+  }
 `
 
 const Card = styled.div`
   flex-basis: 12rem;
-  margin: 0px 50px 20px 5px;
+  margin: 0px 20px 20px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    flex-basis: 20rem;
+  }
 
   .icon {
     display: flex;
